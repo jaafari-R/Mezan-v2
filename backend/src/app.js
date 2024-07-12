@@ -1,9 +1,8 @@
 import express, { Router } from "express";
-
-const PORT = 4000
+import Config from "./config.js";
 
 const app = express();
 
-app.listen(PORT, () => {
-    console.log(`Server is listening on port ${PORT}`);
+app.listen(Config.PORT, () => {
+    console.log(`Server is listening on port ${Config.PORT}`);
 })
