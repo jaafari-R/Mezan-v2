@@ -11,7 +11,6 @@ import partyRoutes from "./routes/party.routes.js";
 import stakeholderRoutes from "./routes/stakeholder.routes.js";
 import userRoutes from "./routes/user.routes.js";
 import dbManager from "./utils/dbManager.js";
-import { Sequelize, DataTypes } from 'sequelize';
 
 const app = express();
 
