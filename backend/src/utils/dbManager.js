@@ -8,6 +8,10 @@ class DBManager {
           dialect: 'postgres'
         });
     }
+
+    getSequelize() {
+        return this.sequelize;
+    }
 }
 
 const dbManager = new DBManager();
