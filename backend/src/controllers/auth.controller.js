@@ -2,7 +2,7 @@ import errorHandler from "../utils/errorHandler.js";
 
 class AuthController {
     register(req, res) {
-        const { idNumber, firstName, lastName, password, confirmPassword, email, phoneNumber city, address } = req.body;
+        const { idNumber, firstName, lastName, password, confirmPassword, email, phoneNumber, city, address } = req.body;
         try {
             // validate data
             
@@ -59,3 +59,6 @@ class AuthController {
         .sendStatus(204);
     }
 }
+
+const authController = new AuthController();
+export default authController;
