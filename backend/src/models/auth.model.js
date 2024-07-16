@@ -19,3 +19,6 @@ const Auth = sequelize.define('UserAuth', {
 class AuthModel {
 
 }
+
+const authModel = new AuthModel();
+export default authModel;
