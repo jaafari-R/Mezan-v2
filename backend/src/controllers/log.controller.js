@@ -1,9 +1,11 @@
+import logModel from "../models/log.model.js";
 import errorHandler from "../utils/errorHandler.js";
 
 class LogController {
-    getAll(req, res) {
+    async getAll(req, res) {
         try {
-            
+            const allLogs = await logModel.getAll();
+            res.json(allLogs);
         }
         catch(error) {
             errorHandler.handleError(res, error);
